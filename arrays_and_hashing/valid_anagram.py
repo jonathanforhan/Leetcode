@@ -6,7 +6,7 @@ from collections import defaultdict
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        d = defaultdict(lambda: 0)
+        d = defaultdict(int)
 
         for c in s:
             d[c] += 1

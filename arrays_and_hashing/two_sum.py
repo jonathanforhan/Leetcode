@@ -6,7 +6,7 @@ class Solution:
         seen = {}
 
         for i, n in enumerate(nums):
-            if seen[n]:
+            if n in seen:
                 return [seen[n], i]
             else:
                 diff = target - n
